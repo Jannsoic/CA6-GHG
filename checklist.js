@@ -33,16 +33,3 @@ tasks.forEach((task, i) => {
 });
 
 document.body.appendChild(container);
-    // Checkbox-Status aus localStorage laden
-    checkbox.checked = localStorage.getItem('task' + i) === 'true';
-    checkbox.addEventListener('change', () => {
-      localStorage.setItem('task' + i, checkbox.checked);
-    });
-
-    div.appendChild(checkbox);
-    div.appendChild(label);
-    container.appendChild(div);
-  });
-
-  document.body.appendChild(container);
-</script>
