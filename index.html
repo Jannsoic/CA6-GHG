@@ -5,52 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Minecraft Teamliste</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #0e1117;
-      color: #e4e6eb;
-      padding: 30px;
-    }
-    h1 {
-      color: #00ff88;
-    }
-    .task {
-      margin-bottom: 15px;
-    }
-    label {
-      cursor: pointer;
-    }
+    body { font-family: Arial; background: #0e1117; color: #e4e6eb; padding: 30px; }
+    h1 { color: #00ff88; }
+    .task { margin-bottom: 15px; }
+    label { cursor: pointer; }
   </style>
 </head>
 <body>
   <h1>Minecraft Team-Checkliste</h1>
 
-  <div class="task">
-    <input type="checkbox" id="spawn" />
-    <label for="spawn">Spawn gebaut</label>
-  </div>
-
-  <div class="task">
-    <input type="checkbox" id="farm" />
-    <label for="farm">Farm fertiggestellt</label>
-  </div>
-
-  <div class="task">
-    <input type="checkbox" id="shop" />
-    <label for="shop">Shop eingerichtet</label>
-  </div>
-
-  <script>
-    // Checkbox-Zustände lokal speichern
-    const boxes = document.querySelectorAll('input[type="checkbox"]');
-    boxes.forEach(box => {
-      const id = box.id;
-      box.checked = localStorage.getItem(id) === 'true';
-      box.addEventListener('change', () => {
-        localStorage.setItem(id, box.checked);
+  <!-- Script einbinden -->
   <script src="checklist.js"></script>
-      });
-    });
-  </script>
 </body>
 </html>
+
